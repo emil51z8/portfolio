@@ -1,0 +1,25 @@
+// ==========================
+// Variables
+// ==========================
+$light-bg: #e8e8e8;
+$medium-bg: #998f8a;
+$dark-bg: #5b5f5c;
+$text-muted: #726965;
+
+// ==========================
+// Fonts
+// ==========================
+@font-face {
+  font-family: "Bodoni FLF";
+  src: url("/fonts/BodoniFLF-Regular.woff2") format("woff2"),
+       url("/fonts/BodoniFLF-Regular.woff") format("woff");
+}
+
+.font-bodoni {
+  font-family: "Bodoni FLF", serif;
+}
+
+.font-gilda {
+  font-family: "Gilda Display", serif;
+}
+

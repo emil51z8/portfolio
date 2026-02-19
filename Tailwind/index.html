@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Bodoni FLF";
+        src:
+          url("/fonts/BodoniFLF-Regular.woff2") format("woff2"),
+          url("/fonts/BodoniFLF-Regular.woff") format("woff");
+      }
+
+      .font-bodoni {
+        font-family: "Bodoni FLF", serif;
+      }
+      .font-gilda {
+        font-family: "Gilda Display", serif;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Første afsnit -->
+    <div class="bg-[#e8e8e8] p-8 text-center">
+      <h1 class="text-6xl font-bodoni mt-4 font-bold">Emil Peitersen</h1>
+
+      <p class="text-lg font-gilda mt-6">
+        Web developer & AP graduate in computer science
+      </p>
+
+      <div class="mt-8 flex flex-col items-center">
+        <p class="text-md font-gilda text-[#726965]">Want to know more?</p>
+
+        <i class="mdi mdi-arrow-down-thin mt-4 text-[#726965] text-9xl"></i>
+      </div>
+    </div>
+    <!-- Andet afsnit -->
+
+    <div class="bg-[#998f8a] p-8">
+      <h2 class="text-6xl font-bodoni text-[#e8e8e8] font-bold">
+        Educational background
+      </h2>
+
+      <div class="flex items-center justify-between">
+        <!-- Venstre side (tekst) -->
+        <div class="font-gilda text-[#e8e8e8]">
+          <h3 class="text-2xl mb-2">AP graduate in computer science</h3>
+          <p>2022-2025</p>
+          <hr class="my-3 text-[#e8e8e8]" />
+
+          <h3 class="text-2xl mb-2">Bachelor's degree - Web development</h3>
+          <p>2025-2027</p>
+          <hr class="my-3 text-[#e8e8e8]" />
+        </div>
+
+        <!-- Højre side (billede) -->
+        <img
+          src="/Tailwind/public/EmilPB.jpg"
+          alt="Emil Peitersen's profile picture"
+          class="w-80 h-96 rounded-lg shadow-2xl ml-8 mr-40"
+        />
+      </div>
+    </div>
+
+    <!-- Tredje afsnit -->
+
+    <section class="bg-[#e8e8e8] py-24 px-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Titel -->
+        <h2
+          class="text-5xl md:text-6xl font-bodoni font-bold mb-16 text-[#2d2d2d]"
+        >
+          Competencies
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Frontend -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg hover:transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="font-gilda text-2xl mb-6 font-semibold text-[#2d2d2d]">
+              Front-end
+            </h3>
+            <ul class="font-gilda space-y-3 text-lg text-gray-700">
+              <li>Vue.js</li>
+              <li>React.js</li>
+              <li>Next.js</li>
+              <li>HTML + CSS</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+
+          <!-- Backend -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg hover:transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="font-gilda text-2xl mb-6 font-semibold text-[#2d2d2d]">
+              Back-end
+            </h3>
+            <ul class="font-gilda space-y-3 text-lg text-gray-700">
+              <li>Node.js</li>
+              <li>Sequelize</li>
+              <li>GraphQL</li>
+              <li>Java</li>
+              <li>Spring</li>
+            </ul>
+          </div>
+
+          <!-- Database -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg hover:transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="font-gilda text-2xl mb-6 font-semibold text-[#2d2d2d]">
+              Database
+            </h3>
+            <ul class="font-gilda space-y-3 text-lg text-gray-700">
+              <li>MySQL</li>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fjerde afsnit  -->
+    <div class="bg-[#5b5f5c] p-8">
+      <h2 class="text-6xl font-bold font-bodoni text-[#e8e8e8]">Projects</h2>
+
+      <div class="flex items-center justify-between">
+        <div class="ml-60 flex flex-col items-center">
+          <p class="text-[#e8e8e8] font-gilda text-2xl text-center">
+            FridgeFlow - Food app for managing household inventory
+          </p>
+
+          <a
+            href="http://ef-designstudio.dk/fridgeflow/"
+            class="inline-block mt-4 bg-[#e8e8e8] text-[#5b5f5c] px-6 py-2 rounded font-gilda text-lg cursor-pointer hover:transform hover:scale-105 transition-transform duration-200"
+          >
+            Open app
+          </a>
+        </div>
+
+        <img
+          src="/Tailwind/public/dashboard skærm.png"
+          alt=" FridgeFlow dashboard screenshot"
+          class="w-48 mt-4 rounded-lg shadow-2xl mr-64 mb-8"
+        />
+      </div>
+    </div>
+
+    <!-- Femte afsnit -->
+
+    <div class="bg-[#998f8a] p-8 pb-60">
+      <h2 class="text-6xl font-bold font-bodoni text-[#e8e8e8]">
+        Contact info
+      </h2>
+
+      <div class="flex items-center justify-center gap-20 flex-wrap mt-20">
+        <a href="mailto:peitersenemil4@gmail.com" class="inline-block mt-20">
+          <div
+            class="relative flex items-center bg-gray-200 rounded-full shadow-md pl-16 pr-6 py-3 hover:transform hover:scale-105 cursor-pointer transition-transform duration-200"
+          >
+            <!-- Rund ikon cirkel -->
+            <div
+              class="absolute -left-6 w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="/Tailwind/public/email-circles-squares-set.png"
+                alt="Mail icon"
+                class="w-16 h-16"
+              />
+            </div>
+
+            <!-- Tekst -->
+            <div class="font-gilda ml-4">
+              <p class="text-gray-600 tracking-widest text-2xl">CONTACT ME!</p>
+              <p class="text-gray-500 text-2xl">peitersenemil4@gmail.com</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="tel:+4531684335" class="inline-block mt-20">
+          <div
+            class="relative flex items-center bg-gray-200 rounded-full shadow-md pl-16 pr-6 py-3 hover:transform hover:scale-105 cursor-pointer transition-transform duration-200"
+          >
+            <!-- Rund ikon cirkel -->
+            <div
+              class="absolute -left-6 w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="/Tailwind/public/green-answer-phone-circle.png"
+                alt="Phone icon"
+                class="w-20 h-20"
+              />
+            </div>
+
+            <!-- Tekst -->
+            <div class="font-gilda ml-4">
+              <p class="text-gray-600 tracking-widest text-2xl">CALL ME!</p>
+              <p class="text-gray-500 text-2xl">+45 31 68 43 35</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/emil-peitersen-165a70256/"
+          class="inline-block mt-20 shadow-2xl"
+        >
+          <button
+            class="bg-gray-100 text-white px-4 py-2 rounded hover:transform hover:scale-105 cursor-pointer transition-transform duration-200"
+          >
+            <img
+              src="/Tailwind/public/Linkedin-Logo.png"
+              alt="LinkedIn Logo"
+              class="w-60"
+            />
+          </button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Bodoni FLF";
+        src:
+          url("/fonts/BodoniFLF-Regular.woff2") format("woff2"),
+          url("/fonts/BodoniFLF-Regular.woff") format("woff");
+      }
+
+      .font-bodoni {
+        font-family: "Bodoni FLF", serif;
+      }
+      .font-gilda {
+        font-family: "Gilda Display", serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #6179e0 0%, #02192d 100%);
+      }
+      .container {
+        text-align: center;
+      }
+      h1,
+      h2,
+      p {
+        color: white;
+        margin-bottom: 40px;
+      }
+      .button-group {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      button {
+        padding: 15px 30px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: white;
+        color: #667eea;
+        font-weight: bold;
+        transition: transform 0.2s;
+      }
+      button:hover {
+        transform: scale(1.05);
+      }
+      h1 {
+        font-size: 64px;
+        font-family: "Bodoni FLF", serif;
+      }
+        h2 {
+            font-size: 48px;
+            font-family: "Gilda Display", serif;
+        }
+        p {
+                font-size: 32px;
+                font-family: "Gilda Display", serif;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Emil Peitersen</h1>
+      <h2>Portfolio made in 3 different CSS frameworks</h2>
+      <p>
+        Click on one of the buttons below to view the portfolio built with each
+        framework
+      </p>
+      <div class="button-group">
+        <button onclick="window.location.href = './bootstrap/index.html'">
+          <img
+            src="/public/bootstrap-logo-vector.png"
+            alt="Bootstrap Logo"
+            style="height: 100px; vertical-align: middle; margin-right: 8px"
+          />
+        </button>
+        <button onclick="window.location.href = './bulma/index.html'">
+          <img
+            src="/public/bulma-banner.png"
+            alt="Bulma Logo"
+            style="height: 100px; vertical-align: middle; margin-right: 8px"
+          />
+        </button>
+        <button onclick="window.location.href = './tailwind/index.html'">
+          <img
+            src="/public/tailwind-css-logo-vector.png"
+            alt="Tailwind Logo"
+            style="height: 100px; vertical-align: middle; margin-right: 8px"
+          />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
