@@ -11,8 +11,8 @@ $text-muted: #726965;
 // ==========================
 @font-face {
   font-family: "Bodoni FLF";
-  src: url("/fonts/BodoniFLF-Regular.woff2") format("woff2"),
-       url("/fonts/BodoniFLF-Regular.woff") format("woff");
+  src: url("fonts/BodoniFLF-Regular.woff2") format("woff2"),
+       url("fonts/BodoniFLF-Regular.woff") format("woff");
 }
 
 .font-bodoni {

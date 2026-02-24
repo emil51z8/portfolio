@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Bodoni FLF";
-  src: url("/fonts/BodoniFLF-Regular.woff2") format("woff2"), url("/fonts/BodoniFLF-Regular.woff") format("woff");
+  src: url("fonts/BodoniFLF-Regular.woff2") format("woff2"), url("fonts/BodoniFLF-Regular.woff") format("woff");
 }
 .font-bodoni {
   font-family: "Bodoni FLF", serif;
