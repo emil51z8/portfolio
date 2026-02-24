@@ -45,7 +45,7 @@
         justify-content: center;
         flex-wrap: wrap;
       }
-      button {
+      a {
         padding: 15px 30px;
         font-size: 16px;
         border: none;
@@ -56,21 +56,21 @@
         font-weight: bold;
         transition: transform 0.2s;
       }
-      button:hover {
+      a:hover {
         transform: scale(1.05);
       }
       h1 {
         font-size: 64px;
         font-family: "Bodoni FLF", serif;
       }
-        h2 {
-            font-size: 48px;
-            font-family: "Gilda Display", serif;
-        }
-        p {
-                font-size: 32px;
-                font-family: "Gilda Display", serif;
-            }
+      h2 {
+        font-size: 48px;
+        font-family: "Gilda Display", serif;
+      }
+      p {
+        font-size: 32px;
+        font-family: "Gilda Display", serif;
+      }
     </style>
   </head>
   <body>
@@ -82,27 +82,29 @@
         framework
       </p>
       <div class="button-group">
-        <button onclick="window.location.href = 'Bootstrap/index.html'">
+        <a href="Bootstrap/">
           <img
             src="public/bootstrap-logo-vector.png"
             alt="Bootstrap Logo"
-            style="height: 100px; vertical-align: middle; margin-right: 8px"
+            style="height: 100px"
           />
-        </button>
-        <button onclick="window.location.href = 'Bulma/index.html'">
+        </a>
+
+        <a href="Bulma/">
           <img
             src="public/bulma-banner.png"
             alt="Bulma Logo"
-            style="height: 100px; vertical-align: middle; margin-right: 8px"
+            style="height: 100px"
           />
-        </button>
-        <button onclick="window.location.href = 'Tailwind/index.html'">
+        </a>
+
+        <a href="Tailwind/">
           <img
             src="public/tailwind-css-logo-vector.png"
             alt="Tailwind Logo"
-            style="height: 100px; vertical-align: middle; margin-right: 8px"
+            style="height: 100px"
           />
-        </button>
+        </a>
       </div>
     </div>
   </body>
